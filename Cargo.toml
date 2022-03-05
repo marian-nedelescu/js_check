@@ -1,0 +1,19 @@
+[package]
+name = "js_check"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+swc_ecma_parser= { version = "0.91.13", features = ["verify"] }
+swc= "0.139.0"
+swc_common= { version = "0.17.9", features = ["tty-emitter"] }
+swc_ecma_visit= "0.54.0"
+swc_ecmascript= { version = "0.123.0", features = ["visit","codegen","parser","transforms","utils"] }
+swc_ecma_ast= "0.68.3"
+string_cache= "0.8.3"
+swc_ecma_transforms_base = "0.63.2"
+swc_ecma_codegen= "0.93.5"
+clap = { version = "3.1.5", features = ["derive"] }
